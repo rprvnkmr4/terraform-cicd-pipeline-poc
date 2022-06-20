@@ -1,10 +1,10 @@
 resource "aws_instance" "OneServer" {
-  ami           = var.ec2_image
-  instance_type = var.ec2_instance_type
-  key_name      = var.ec2_keypair
-  count         = var.ec2_count
+  ami           = ami-08d4ac5b634553e16
+  instance_type = t2.micro
+  key_name      = terraform-cicd
+  count         = 1
   tags = {
-    Name = var.ec2_tags
+    Name = aws-terraform-cicd-poc
   }
 }
 
