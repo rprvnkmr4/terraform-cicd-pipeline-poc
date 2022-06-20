@@ -19,4 +19,4 @@ phases:
       - terraform plan
       - terraform apply --auto-approve
     finally:
-      - echo This always runs even if the install command fails
+      - echo This always runs even if the install command
