@@ -10,7 +10,6 @@ phases:
   pre_build:
     - terraform init
     - terraform validate
-    - terraform plan
   build:
     commands:
       - terraform plan
